@@ -1,0 +1,34 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  font-family: "Josefin Sans", "sans-serif","微軟正黑體"; }
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, img {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+ol, ul, li {
+  list-style: none; }
+
+img {
+  width: 100%;
+  vertical-align: top; }
+
+.full-width {
+  width: 100%;
+  margin: auto; }
+
+a {
+  display: inline-block;
+  text-decoration: none; }
+
+h2 {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 3em; }

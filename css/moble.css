@@ -1,0 +1,211 @@
+@media screen and (max-width: 599px) {
+  .btn a {
+    color: #79736f;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border: 1px solid #79736f;
+    transition: .6s ease;
+    margin-top: 30px; }
+    .btn a:hover {
+      color: #f0ece4;
+      background-color: #79736f; }
+  .scroll_nav {
+    position: fixed;
+    top: 0; }
+  #gotop {
+    display: none; }
+  nav {
+    position: fixed;
+    margin: auto;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.8); }
+    nav .toggler {
+      float: right;
+      width: 50px;
+      height: 50px;
+      position: relative; }
+      nav .toggler span {
+        display: block;
+        position: absolute;
+        width: 18px;
+        height: 2px;
+        background-color: rgba(255, 255, 255, 0.9);
+        top: 5px;
+        right: 10px;
+        bottom: 0;
+        left: 0;
+        margin: auto; }
+        nav .toggler span::before {
+          bottom: 10px; }
+        nav .toggler span::after {
+          bottom: -10px; }
+        nav .toggler span::before, nav .toggler span::after {
+          transition: all .2s ease;
+          content: "";
+          display: block;
+          position: absolute;
+          width: 18px;
+          height: 2px;
+          background-color: rgba(255, 255, 255, 0.9);
+          top: 0;
+          right: 0;
+          left: 0;
+          margin: auto; }
+    nav .togglerX span {
+      display: block;
+      position: absolute;
+      background-color: #000000; }
+      nav .togglerX span::before {
+        width: 13px;
+        left: -9px;
+        top: 5px;
+        transform: rotate(-45deg); }
+      nav .togglerX span::after {
+        width: 13px;
+        top: -15px;
+        left: 7px;
+        transform: rotate(45deg); }
+    nav .logo {
+      text-align: center;
+      height: 50px;
+      padding-top: 15px;
+      padding-left: 60px; }
+      nav .logo a {
+        color: #ffffff; }
+      nav .logo h1 {
+        font-family: 'Libre Baskerville', 'serif';
+        letter-spacing: 10px;
+        font-size: 1.3em; }
+    nav .search {
+      display: none; }
+    nav .menu {
+      display: none; }
+      nav .menu li {
+        display: block;
+        padding: 10px 20px;
+        text-align: center; }
+        nav .menu li a {
+          color: #ffffff; }
+          nav .menu li a i {
+            display: none; }
+      nav .menu .menu_list_content {
+        display: none; }
+  header {
+    padding-top: 50px !important;
+    margin-bottom: 0 !important; }
+    header .slick-dots {
+      display: none; }
+  #news {
+    padding: 10px 0;
+    background-color: #f2f0e9; }
+    #news h2 {
+      font-size: 1.3em;
+      padding-top: 60px;
+      padding-bottom: 30px; }
+    #news .btn {
+      text-align: center;
+      padding-bottom: 40px;
+      font-size: 1.3em; }
+    #news .mobel_hidden {
+      display: none; }
+  .mobel_hidden {
+    display: none; }
+  #images {
+    height: 600px;
+    background-image: url(../images/index_img/poem_mei.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  #products h2 {
+    font-size: 1.3em;
+    padding-top: 60px;
+    padding-bottom: 30px; }
+  #products .col-12 .col-6, #products .col-12 .col-4 {
+    padding: 0 !important; }
+  #products .col-12 p {
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 300; }
+  #products .poems_bg {
+    background-color: #f2f0e9;
+    padding: 150px 0; }
+  #products .poems {
+    text-align: center;
+    padding-top: 15px;
+    font-weight: 300; }
+  #products .products_content {
+    display: none; }
+  #products .tablet_word {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 300; }
+  #service {
+    font-weight: 300;
+    padding-bottom: 30px;
+    background-color: #f2f0e9;
+    text-align: center; }
+    #service h2 {
+      font-size: 1.5em;
+      padding-top: 60px;
+      padding-bottom: 30px; }
+    #service .service_content a {
+      color: #000000;
+      display: inline-block; }
+    #service .service_content .social_for_desktop {
+      display: none; }
+    #service .service_content .col-3 {
+      padding: 10px 0; }
+      #service .service_content .col-3 h3 {
+        font-weight: 300;
+        font-size: 1.5em; }
+      #service .service_content .col-3 li {
+        padding: 5px 0; }
+      #service .service_content .col-3 a {
+        color: #000000; }
+    #service .service_content .col-4 {
+      padding: 10px 0; }
+      #service .service_content .col-4 h3 {
+        font-weight: 300;
+        font-size: 1.5em; }
+      #service .service_content .col-4 .col-1 {
+        padding: 10px 0; }
+      #service .service_content .col-4 .col-11 {
+        letter-spacing: 1px; }
+      #service .service_content .col-4 i {
+        font-size: 1.3em; }
+    #service .service_content .social_for_moble {
+      padding-top: 50px; }
+      #service .service_content .social_for_moble i {
+        font-size: 2em; }
+      #service .service_content .social_for_moble a {
+        padding: 20px;
+        display: inline-block; }
+    #service .border_service {
+      display: inline-block;
+      border: 1px solid #79736f;
+      padding: 5px;
+      margin-bottom: 20px; }
+      #service .border_service h2 {
+        font-weight: 300; }
+  #footer .col-12 {
+    height: 30px;
+    text-align: center;
+    color: #e6d1b3;
+    background-color: #79736f;
+    line-height: 30px;
+    margin-bottom: 50px; }
+    #footer .col-12 a {
+      color: #ffffff; }
+  #moble_search {
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0; }
+    #moble_search li a {
+      color: #ffffff;
+      float: left;
+      padding: 20px 52px; } }

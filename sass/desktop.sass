@@ -1,0 +1,261 @@
+@media screen and ( min-width: 1200px )
+    @import "grid"
+    @import "gotop"
+    @import "color"
+    @import "btn"
+    body
+        height: 3000px
+    .fixed-width
+        width: 1200px
+        margin: auto
+    #gotop
+        z-index: 9998
+    .scroll_nav
+        padding: 0
+        background-color: $black_5
+    .scroll_logo
+        float: left
+        padding-top: 32px !important
+    .scroll_logoh1
+        font-size: 1.5em !important
+    .scroll_search
+        padding-top: 30px
+        height: 30px
+    .scroll_menu
+        padding-right: 0 !important
+        padding-bottom: 10px !important
+    nav 
+        position: fixed
+        margin: auto
+        z-index: 9999
+        padding-bottom: 10px
+        background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.5) 0%,rgba(0,0,0,0) 100%)
+        .logo
+            text-align: center
+            padding-top: 20px
+            a
+                color: $p_white
+            h1
+                font-size: 2.5em
+                font-family: 'Libre Baskerville', 'serif'
+                letter-spacing: 10px
+        .search
+            li
+                float: right
+                padding: 0 15px
+                a
+                    color: $p_white
+                    &:hover
+                        color: $m_brown
+        .menu
+            display: block !important
+            text-align: center
+            position: relative
+            width: 1080px
+            li
+                display: inline-block
+                padding: 10px 20px
+                margin: 0
+                a
+                    position: relative
+                    color: $p_white
+                    i
+                        padding-left: 4px
+                        display: inline-block
+                    &:hover
+                        color: $black_5
+                &:hover .menu_list_content
+                    display: block  
+            .menu_list_content
+                width: 500px
+                display: none
+                border: 1px solid $black
+                background-color: $p_white_8
+                position: absolute
+                top: 30px
+                img
+                    width: 200px
+                a
+                    display: block
+                    padding: 10px
+                    color: $black
+    header
+        margin: 0 !important
+    // news_images
+    #news
+        padding: 150px 0
+        background-color: $l_gray
+        h2
+            padding-bottom: 30px
+        .btn
+            text-align: center
+        .img_border
+            border: 1px solid $black        
+        .img_pb:nth-of-type(1)
+            margin-bottom: 53px
+        .img_trans
+            overflow: hidden
+            img
+                transition: all 3s ease-out
+            &:hover img
+                transform: scale(1.2)
+    #news_images
+        padding: 150px 0
+        h2
+            padding-bottom: 30px
+        .col-6 
+            .news_images_pdb
+                padding-bottom: 20px
+        .btn
+            text-align: center
+    // images
+    #images 
+        height: 600px
+        background-image: url(../images/index_img/poem_mei.jpg)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+    // products
+    #products
+        padding: 150px 0
+        .col-12
+            text-align: center
+            .col-6,.col-4
+                padding: 0 !important
+            .col-6
+                p
+                    padding-top: 15px
+                    font-size: 1.2em
+                    font-weight: 300
+            h2
+                padding-top: 60px
+                padding-bottom: 30px
+        .col-12:nth-of-type(2)
+            padding-bottom: 100px
+            p
+                padding-top: 15px
+                font-size: 1.2em
+                font-weight: 300
+        .col-12:nth-of-type(3) 
+            padding-top: 150px   
+        .poems_bg
+            background-color: $l_gray
+            padding: 150px 0
+        .poems
+            text-align: center
+            padding-top: 15px
+            font-weight: 300
+        .pro_02,.pro_01,.pro_03
+            padding: 0 !important
+            position: relative
+        a
+            display: block
+            &:hover .products_content
+                display: block
+        .products_content
+            display: none
+            position: absolute
+            border: 1px solid $black
+            width: 90%
+            height: 92%
+            top: 0
+            bottom: 0
+            right: 0
+            left: 0
+            margin: auto
+            text-align: center
+            color: $p_white
+            .word
+                font-size: 2em
+                letter-spacing: 3px
+                padding-top: 400px
+                font-weight: 300
+        .tablet_word
+            display: none
+    // service
+    #service
+        font-weight: 300
+        padding-top: 100px
+        padding-bottom: 100px
+        background-color: $l_gray
+        h2
+            padding-bottom: 30px
+        .service_content
+            .social_for_moble
+                display: none
+            a
+                color: $black
+                display: inline-block
+                &:hover
+                    color: $m_brown
+            .col-12
+                padding: 60px 0
+                text-align: center
+                .social_fb,.social_ig,.social_mail,.social_fbmess
+                    display: inline-block
+                    position: relative
+                    padding: 0 25px
+                .social_fb::before,.social_ig::before,.social_mail::before,.social_fbmess::before
+                    display: none
+                    padding: 8px
+                    margin-bottom: 5px
+                    border: 1px solid $black
+                    position: absolute
+                    bottom: 40px
+                    left: -10px
+                .social_fb:hover.social_fb::before,.social_ig:hover.social_ig::before,.social_mail:hover.social_mail::before,.social_fbmess:hover.social_fbmess::before
+                    display: block
+                .social_fb::before
+                    content: "Facebook"
+                .social_ig::before
+                    content: "Instagram"                
+                .social_mail::before
+                    content: "Mail to Us" 
+                .social_fbmess::before
+                    content: "Messager"
+            .border_line
+                width: 30px
+                background-color: #fff
+            .col-3
+                h3
+                    font-weight: 300
+                    font-size: 1.5em
+                li
+                    padding: 5px 0
+                a
+                    color: $black
+                    &:hover
+                        color: $m_brown
+            .col-4
+                text-align: left
+                h3
+                    font-weight: 300
+                    font-size: 1.5em
+                .col-12
+                    padding: 0
+                    letter-spacing: 2px
+                .col-11
+                    text-align-last: left
+        .border_service
+            display: inline-block
+            border: 1px solid $m_brown
+            padding: 5px
+            margin-bottom: 20px
+            h2 
+                font-weight: 300
+    // footer
+    #footer
+        height: 50px
+        background-color: $m_brown
+        .col-12
+            text-align: center
+            color: $l_brown
+            p
+                letter-spacing: 2px
+            a
+                color: $beige
+                &:hover
+                    color: $m_brown
+    // moble_search               
+    #moble_search
+        display: none

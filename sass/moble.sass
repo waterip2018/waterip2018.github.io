@@ -1,0 +1,218 @@
+@media screen and ( max-width: 599px )
+    @import "color"
+    @import "btn"
+    .scroll_nav
+        position: fixed
+        top: 0
+    #gotop
+        display: none
+    nav 
+        position: fixed
+        margin: auto
+        z-index: 9999
+        background-color: $black_8
+        .toggler
+            float: right
+            width: 50px
+            height: 50px
+            position: relative
+            span
+                display: block
+                position: absolute
+                width: 18px
+                height: 2px
+                background-color: $p_white_9
+                top: 5px
+                right: 10px
+                bottom: 0
+                left: 0
+                margin: auto
+                &::before
+                    bottom: 10px
+                &::after
+                    bottom: -10px
+                &::before,&::after
+                    transition: all .2s ease
+                    content: ""
+                    display: block
+                    position: absolute
+                    width: 18px
+                    height: 2px
+                    background-color: $p_white_9
+                    top: 0
+                    right: 0
+                    left: 0
+                    margin: auto
+        .togglerX span
+            display: block
+            position: absolute
+            background-color: $black
+            &::before
+                width: 13px
+                left: -9px
+                top: 5px
+                transform: rotate(-45deg)
+            &::after
+                width: 13px
+                top: -15px
+                left: 7px
+                transform: rotate(45deg)
+            
+        .logo
+            text-align: center
+            height: 50px
+            padding-top: 15px
+            padding-left: 60px
+            a
+                color: $p_white
+            h1
+                font-family: 'Libre Baskerville', 'serif'
+                letter-spacing: 10px
+                font-size: 1.3em
+        .search
+            display: none
+        .menu
+            display: none
+            li
+                display: block
+                padding: 10px 20px
+                text-align: center
+                a
+                    color: $p_white
+                    i
+                        display: none
+            .menu_list_content
+                display: none
+    // header
+    header
+        padding-top: 50px !important
+        margin-bottom: 0 !important
+        .slick-dots 
+            display: none
+    // news_images
+    #news
+        padding: 10px 0
+        background-color: $l_gray
+        h2
+            font-size: 1.3em
+            padding-top: 60px
+            padding-bottom: 30px
+        .btn
+            text-align: center
+            padding-bottom: 40px
+            font-size: 1.3em
+        .mobel_hidden
+            display: none
+    .mobel_hidden
+        display: none
+
+    // images
+    #images 
+        height: 600px
+        background-image: url(../images/index_img/poem_mei.jpg)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+    // products
+    #products
+        h2
+            font-size: 1.3em
+            padding-top: 60px
+            padding-bottom: 30px
+        .col-12
+            .col-6,.col-4
+                padding: 0 !important
+            p
+                padding: 15px 0
+                text-align: center
+                font-size: 1.3em
+                font-weight: 300
+        .poems_bg
+            background-color: $l_gray
+            padding: 150px 0
+        .poems
+            text-align: center
+            padding-top: 15px
+            font-weight: 300        
+        .products_content
+            display: none
+        .tablet_word
+            text-align: center
+            font-size: 1.3em
+            font-weight: 300
+    // service
+    #service
+        font-weight: 300
+        padding-bottom: 30px
+        background-color: $l_gray
+        text-align: center
+        h2
+            font-size: 1.5em
+            padding-top: 60px
+            padding-bottom: 30px
+        .service_content
+            a
+                color: $black
+                display: inline-block
+            .social_for_desktop
+                display: none
+            .col-3
+                padding: 10px 0
+                h3
+                    font-weight: 300
+                    font-size: 1.5em
+                li
+                    padding: 5px 0
+                a
+                    color: $black
+            .col-4
+                padding: 10px 0
+                h3
+                    font-weight: 300
+                    font-size: 1.5em
+                .col-1
+                    padding: 10px 0
+                .col-11
+                    letter-spacing: 1px
+                i
+                    font-size: 1.3em
+            .social_for_moble
+                padding-top: 50px
+                i
+                    font-size: 2em
+                a
+                    padding: 20px
+                    display: inline-block
+        .border_service
+            display: inline-block
+            border: 1px solid $m_brown
+            padding: 5px
+            margin-bottom: 20px
+            h2 
+                font-weight: 300
+    // footer
+    #footer
+        .col-12
+            height: 30px
+            text-align: center
+            color: $l_brown
+            background-color: $m_brown
+            line-height: 30px
+            margin-bottom: 50px
+            a
+                color: $p_white
+    #moble_search
+        position: fixed
+        display: inline-block
+        width: 100%
+        height: 50px
+        background-color: $black_8
+        bottom: 0
+        li
+            a
+                color: $p_white
+                float: left
+                padding: 20px 52px
+
+                
+

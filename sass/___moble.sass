@@ -1,0 +1,158 @@
+@media screen and ( max-width: 599px )
+    @import "color"
+
+    #gotop
+        display: none!important
+    // NAV
+    nav 
+        position: fixed
+        background-color: $black
+        z-index: 9999
+        .toggler
+            float: right
+            width: 40px
+            height: 40px
+            position: relative
+            span
+                display: block
+                position: absolute
+                width: 17px
+                height: 2px
+                background-color: $p_white_9
+                top: 15px
+                right: 15px
+                bottom: 0
+                left: 0
+                margin: auto
+                &::before
+                    content: ""
+                    display: block
+                    position: absolute
+                    width: 17px
+                    height: 2px
+                    background-color: $p_white_9
+                    top: 0
+                    right: 0
+                    bottom: 10px
+                    left: 0
+                    margin: auto
+                &::after
+                    content: ""
+                    display: block
+                    position: absolute
+                    width: 17px
+                    height: 2px
+                    background-color: $p_white_9
+                    top: 0
+                    right: 0
+                    bottom: -10px
+                    left: 0px
+                    margin: auto
+                    
+        .logo
+            text-align: center
+            padding-left: 50px
+            padding-top: 15px
+            padding-bottom: 15px
+            a
+                color: $d_brown
+            h1
+                font-family: 'Libre Baskerville', 'serif'
+                letter-spacing: 5px
+                color: $p_white
+        .search
+            position: fixed
+            width: 100%
+            height: 50px
+            bottom: 0
+            background-color: $black
+            ul
+                text-align: center
+                line-height: 50px
+                li
+                    float: left
+                    padding: 0 58px 
+                    // 這邊要怎麼讓這三個小圖均分？ 要如何把放大鏡換成別的圖？
+                    a
+                        color: $p_white
+        .menu
+            text-align: center
+            display: none
+            li
+                text-align-last: left
+                padding: 10px 20px
+                font-weight: 300
+                margin: 0
+                a
+                    position: relative
+                    color: $p_white_9
+                    i
+                        display: none
+            .menu_list_content
+                display: none
+                border: 1px solid $black
+                background-color: $p_white
+                position: absolute
+                a
+                    display: block
+                    padding: 10px
+    // poems
+    header
+        padding-top: 50px
+    #poems
+        text-align: center
+        padding: 50px
+        background-color: $white
+        .content
+            padding: 10px
+        p
+            color: $m_brown
+            padding: 5px
+    // service
+    #service
+        font-weight: 300
+        .moble_list
+            display: none
+        .service_content
+            a
+                color: $black
+                display: inline-block
+            .col-12
+                padding: 60px 0
+                text-align: center
+                .social_fb,.social_ig,.social_mail,.social_fbmess
+                    display: inline-block
+                    position: relative
+                    padding-right: 10px
+            .col-3
+                text-align: center
+                margin: 20px
+                li
+                    padding: 5px 0
+                a
+                    color: $black
+            .col-6
+                text-align: center
+                margin: 20px
+                .col-12
+                    padding: 10px
+                    .col-1,.col-11
+                        display: inline
+                        padding-right: 20px
+        .border_service
+            display: inline-block
+            border: 1px solid $m_brown
+            padding: 5px
+            margin-bottom: 20px
+            h2 
+                font-weight: normal
+    // footer
+    #footer
+        .col-12
+            text-align: center
+            color: $m_brown
+            background-color: $white
+            line-height: 40px
+            margin-bottom: 40px
+            a
+                color: $black

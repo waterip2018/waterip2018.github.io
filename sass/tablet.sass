@@ -1,0 +1,253 @@
+@media screen and ( min-width: 600px) and ( max-width: 1199px)
+    @import "grid"
+    @import "gotop"
+    @import "color"
+    @import "btn"
+    body
+        height: 3000px
+    #gotop
+        display: block
+        z-index: 9998
+        right: 25px
+        bottom: 20px
+    nav 
+        position: fixed
+        margin: auto
+        z-index: 9999
+        background-color: $black_5
+        .logo
+            text-align: center
+            padding-top: 15px
+            padding-bottom: 10px
+            padding-left: 50px
+            a
+                color: $p_white
+            h1
+                font-size: 1.7em
+                font-family: 'Libre Baskerville', 'serif'
+                letter-spacing: 10px
+        .search
+            position: fixed
+            top: 25px
+            left: 30px
+            li
+                float: right
+                padding-right: 20px
+                a
+                    color: $p_white
+        .toggler
+            float: right
+            width: 50px
+            height: 50px
+            position: relative
+            span
+                display: block
+                position: absolute
+                width: 18px
+                height: 2px
+                background-color: $p_white_9
+                top: 15px
+                right: 15px
+                bottom: 0
+                left: 0
+                margin: auto
+                &::before
+                    bottom: 10px
+                &::after
+                    bottom: -10px
+                &::before,&::after
+                    transition: all .2s ease
+                    content: ""
+                    display: block
+                    position: absolute
+                    width: 18px
+                    height: 2px
+                    background-color: $p_white_9
+                    top: 0
+                    right: 0
+                    left: 0
+                    margin: auto
+        .togglerX span
+            display: block
+            position: absolute
+            background-color: $black
+            &::before
+                width: 13px
+                left: -9px
+                top: 5px
+                transform: rotate(-45deg)
+            &::after
+                width: 13px
+                top: -15px
+                left: 7px
+                transform: rotate(45deg)
+        .menu
+            display: none
+            text-align: center
+            position: relative
+            li
+                padding: 15px 20px
+                margin: 0
+                a
+                    color: $p_white
+                    i
+                        display: none
+            .menu_list_content
+                display: none               
+    header
+        margin: 0 !important
+    // news_images
+    #news
+        padding: 80px 0
+        background-color: $l_gray
+        h2
+            padding-bottom: 30px
+            font-size: 2.5em
+        .btn
+            text-align: center
+            font-size: 1.7em
+        .img_border
+            border: 1px solid $black        
+        .img_pb:nth-of-type(1)
+            margin-bottom: 50px
+    #news_images
+        padding: 80px 0
+        h2
+            padding-bottom: 30px
+            font-size: 2.5em 
+        .col-6 
+            .news_images_pdb
+                padding-bottom: 20px
+        .btn
+            text-align: center
+            font-size: 1.7em
+    // images
+    #images 
+        height: 600px
+        background-image: url(../images/index_img/poem_mei.jpg)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: cover
+    // products
+    #products
+        padding: 80px 0
+        .col-12
+            text-align: center
+            .col-6,.col-4
+                padding: 0 !important
+            p
+                padding-top: 15px
+                font-size: 1.7em
+                font-weight: 300
+            h2
+                font-size: 2.5em
+                padding-top: 60px
+                padding-bottom: 30px
+        .col-12:nth-of-type(2)
+            padding-bottom: 80px
+        .col-12:nth-of-type(3) 
+            padding-top: 80px   
+        .poems_bg
+            background-color: $l_gray
+            padding: 100px 0
+        .poems
+            text-align: center
+            padding-top: 15px
+            font-weight: 300
+            font-size: 1.2em
+        .pro_02,.pro_01,.pro_03
+            padding: 0 !important
+            position: relative
+        a
+            display: block
+        .products_content
+            display: none
+    // service
+    #service
+        font-weight: 300
+        padding-top: 100px
+        padding-bottom: 100px
+        background-color: $l_gray
+        text-align: center
+        h2
+            padding-bottom: 30px
+            font-size: 2.5em
+        .service_content
+            .social_for_moble
+                display: none
+            a
+                color: $black
+                display: inline-block
+                &:hover
+                    color: $m_brown
+            .col-12
+                padding: 60px 0
+                text-align: center
+                .social_fb,.social_ig,.social_mail,.social_fbmess
+                    display: inline-block
+                    position: relative
+                    padding: 0 25px
+                .social_fb::before,.social_ig::before,.social_mail::before,.social_fbmess::before
+                    display: none
+                    padding: 8px
+                    margin-bottom: 5px
+                    border: 1px solid $black
+                    position: absolute
+                    bottom: 40px
+                    left: -10px
+                .social_fb:hover.social_fb::before,.social_ig:hover.social_ig::before,.social_mail:hover.social_mail::before,.social_fbmess:hover.social_fbmess::before
+                    display: block
+                .social_fb::before
+                    content: "Facebook"
+                .social_ig::before
+                    content: "Instagram"                
+                .social_mail::before
+                    content: "Mail to Us" 
+                .social_fbmess::before
+                    content: "Messager"
+            .border_line
+                width: 30px
+                background-color: #fff
+            .col-3
+                h3
+                    font-weight: 300
+                    font-size: 1.5em
+                li
+                    padding: 5px 0
+                a
+                    color: $black
+                    &:hover
+                        color: $m_brown
+            .col-4
+                text-align: left
+                h3
+                    font-weight: 300
+                    font-size: 1.5em
+                .col-12
+                    padding: 0
+                    letter-spacing: 2px
+                .col-11
+                    text-align-last: left
+        .border_service
+            display: inline-block
+            border: 1px solid $m_brown
+            padding: 5px
+            margin-bottom: 20px
+            h2 
+                font-weight: 300
+    // footer
+    #footer
+        height: 50px
+        background-color: $m_brown
+        margin-bottom: 0
+        .col-12
+            text-align: center
+            color: $l_brown
+            p
+                letter-spacing: 2px
+            a
+                color: $beige
+                &:hover
+                    color: $m_brown
+    #moble_search
+        display: none
